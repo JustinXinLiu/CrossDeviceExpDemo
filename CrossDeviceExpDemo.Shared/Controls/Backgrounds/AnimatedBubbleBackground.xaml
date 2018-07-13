@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="CrossDeviceExpDemo.Shared.Controls.AnimatedBubbleBackground"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="using:CrossDeviceExpDemo.Shared.Controls"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="300"
+             d:DesignWidth="400"
+             mc:Ignorable="d">
+
+    <Canvas x:Name="LayoutRoot">
+        <Canvas.Background>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Color="#434343" />
+                <GradientStop Offset="1" Color="#000000" />
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Rectangle x:Name="Rectangle1"
+                   Width="200"
+                   Height="200"
+                   d:IsHidden="True"
+                   Opacity="0.9"
+                   RadiusX="98"
+                   RadiusY="90">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#FDC830" />
+                    <GradientStop Offset="1" Color="#F37335" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="Rectangle2"
+                   Width="200"
+                   Height="200"
+                   d:IsHidden="True"
+                   Opacity="0.8"
+                   RadiusX="98"
+                   RadiusY="90">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#108DC7" />
+                    <GradientStop Offset="1" Color="#EF8E38" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="Rectangle3"
+                   Width="100"
+                   Height="100"
+                   d:IsHidden="True"
+                   Opacity="0.9"
+                   RadiusX="49"
+                   RadiusY="45">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#22c1c3" />
+                    <GradientStop Offset="1" Color="#fdbb2d" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="Rectangle4"
+                   Width="100"
+                   Height="100"
+                   Opacity="0.3"
+                   RadiusX="49"
+                   RadiusY="45">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#F7971E" />
+                    <GradientStop Offset="1" Color="#FFD200" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Canvas>
+</UserControl>

@@ -1,0 +1,28 @@
+﻿<Page x:Class="CrossDeviceExpDemo.Main.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:controls="using:CrossDeviceExpDemo.Shared.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:CrossDeviceExpDemo.Main"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+      mc:Ignorable="d">
+
+    <Grid>
+        <controls:AnimatedBubbleBackground />
+
+        <StackPanel Margin="64,280,0,0"
+                    VerticalAlignment="Center"
+                    Opacity="0.9">
+            <TextBlock FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Text="PROJECT ROME" />
+
+            <TextBlock FontSize="16"
+                       FontWeight="SemiBold"
+                       Foreground="White"
+                       Text="DEMO" />
+        </StackPanel>
+    </Grid>
+</Page>
