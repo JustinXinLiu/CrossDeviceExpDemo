@@ -104,6 +104,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Assets\3D\shark.glb" />
     <None Include="CrossDeviceExpDemo.Main_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

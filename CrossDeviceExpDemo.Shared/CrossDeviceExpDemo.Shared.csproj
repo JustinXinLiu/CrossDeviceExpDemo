@@ -109,6 +109,7 @@
     <Compile Include="Controls\Backgrounds\AnimatedBubbleBackground.xaml.cs">
       <DependentUpon>AnimatedBubbleBackground.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model3D\Model3D.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\CrossDeviceExpDemo.Shared.rd.xml" />
   </ItemGroup>
@@ -125,6 +126,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\3D\shark.glb" />
+    <Content Include="Model3D\babylon.js" />
+    <Content Include="Model3D\babylonjs.loaders.min.js" />
+    <Content Include="Model3D\BabylonView.html" />
+    <Content Include="Model3D\environment.dds" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
