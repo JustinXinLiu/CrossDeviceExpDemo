@@ -93,7 +93,7 @@ namespace Microsoft.Toolkit.Uwp.UI.Controls
             {
                 _view.ScriptNotify += View_ScriptNotify;
                 _view.NavigationCompleted += View_NavigationCompleted;
-                _view.Navigate(new Uri("ms-appx-web:///Model3D/BabylonView.html"));
+                _view.Navigate(new Uri("ms-appx-web:///CrossDeviceExpDemo.Shared/Controls/Model3D/BabylonView.html"));
             }
 
             _animationList = GetTemplateChild(AnimationListPart) as ComboBox;

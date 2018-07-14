@@ -1,14 +1,18 @@
-﻿<Page
-    x:Class="CrossDeviceExpDemo.Companion.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:CrossDeviceExpDemo.Companion"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+﻿<Page x:Class="CrossDeviceExpDemo.Companion.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:CrossDeviceExpDemo.Companion"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:toolkit="using:Microsoft.Toolkit.Uwp.UI.Controls"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+      mc:Ignorable="d">
 
     <Grid>
-
+        <toolkit:Model3D AlphaInDegrees="120"
+                         BetaInDegrees="90"
+                         CameraControl="True"
+                         RadiusPercentage="10"
+                         Source="ms-appx:///CrossDeviceExpDemo.Shared/Assets/3D/shark.glb" />
     </Grid>
 </Page>
