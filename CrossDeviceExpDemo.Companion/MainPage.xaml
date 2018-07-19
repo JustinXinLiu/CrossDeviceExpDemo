@@ -13,6 +13,6 @@
                          BetaInDegrees="90"
                          CameraControl="True"
                          RadiusPercentage="10"
-                         Source="ms-appx:///CrossDeviceExpDemo.Shared/Assets/3D/shark.glb" />
+                         Source="ms-appx:///CrossDeviceExpDemo.Shared/Assets/3D/T-rex.glb" />
     </Grid>
 </Page>

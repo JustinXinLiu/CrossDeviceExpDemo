@@ -110,6 +110,7 @@
       <DependentUpon>AnimatedBubbleBackground.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Model3D\Model3D.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\CrossDeviceExpDemo.Shared.rd.xml" />
   </ItemGroup>
@@ -137,6 +138,14 @@
     <Content Include="Controls\Model3D\babylonjs.loaders.min.js" />
     <Content Include="Controls\Model3D\BabylonView.html" />
     <Content Include="Controls\Model3D\environment.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\3D\Ankylosaurus.glb" />
+    <Content Include="Assets\3D\Apatosaurus.glb" />
+    <Content Include="Assets\3D\Pterodactyl.glb" />
+    <Content Include="Assets\3D\Triceratops.glb" />
+    <Content Include="Assets\3D\TyrannosaurusRex.glb" />
+    <Content Include="Assets\3D\Velociraptor.glb" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
