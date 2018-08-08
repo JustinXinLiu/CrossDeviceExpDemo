@@ -4,6 +4,7 @@
     {
         public string ModelName { get; set; }
         public string ModelPath => $"ms-appx:///CrossDeviceExpDemo.Shared/Assets/3D/{ModelName}";
+        public string ModelPathLocal => $"Assets/3D/{ModelName}";
 
         public string DisplayName { get; set; }
 

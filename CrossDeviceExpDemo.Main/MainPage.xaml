@@ -97,30 +97,40 @@
                        Text="DEMO" />
         </StackPanel>
 
-        <ListView x:Name="ProductsView"
+        <!--<ListView x:Name="ProductsView"
                   ItemsSource="{x:Bind MyProducts}"
                   Style="{StaticResource ListViewStyle}">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="models:Product">
-                    <Grid Width="480"
+                    <Grid x:Name="ProductRoot"
+                          Width="480"
                           Height="800"
-                          Margin="24"
-                          Background="LightGreen">
-                        <toolkit:Model3D x:Name="Image"
-                                         x:Load="False"
-                                         AlphaInDegrees="120"
-                                         BetaInDegrees="90"
-                                         CameraControl="False"
-                                         RadiusPercentage="10"
-                                         Source="{x:Bind ModelPath}" />
-                        <TextBlock HorizontalAlignment="Center"
+                          Margin="24">
+                        <Rectangle x:Name="VisualPlaceholder"
+                                   Width="200"
+                                   Height="150"
+                                   Fill="LightBlue"
+                                   Loaded="OnVisualPlaceholderLoaded" />
+        -->
+        <!--<TextBlock HorizontalAlignment="Center"
                                    VerticalAlignment="Center"
                                    FontSize="40"
                                    FontWeight="Bold"
-                                   Text="{x:Bind DisplayName}" />
+                                   Text="{x:Bind DisplayName}" />-->
+        <!--
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
+        </ListView>-->
+
+        <Rectangle x:Name="VisualPlaceholder"
+                   Width="200"
+                   Height="150"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Fill="LightBlue"
+                   Loaded="OnVisualPlaceholderLoaded"
+                   ManipulationDelta="VisualPlaceholder_ManipulationDelta"
+                   ManipulationMode="TranslateY,TranslateRailsY" />
     </Grid>
 </Page>
